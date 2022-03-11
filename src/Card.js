@@ -1,25 +1,38 @@
 import React from 'react';
 import './App.css';
-import pond from "./pond.gif"
+//import pond from "./pond.gif";
+import sunflower from './sunflower.png';
+import './Happy-birthday-piano-music.mov';
+//import { ReactComponent as MyLogo } from './happy-birthday.svg'
+import song from './Happy-birthday-piano-music.mp3';
 
 export default class Card extends React.Component {
-  playAudio() {
-    const audioEl = document.getElementsByClassName('audio-element')[0];
-    audioEl.play();
-  }
+  state = {
+    audio: new Audio(song),
+    isPlaying: false,
+  };
+  playPause = () => {
+    let isPlaying = this.state.isPlaying;
+    if (isPlaying) {
+      this.state.audio.pause();
+    } else {
+      this.state.audio.play();
+    }
+    this.setState({ isPlaying: !isPlaying });
+  };
+
   render() {
     return (
       <div>
-        <h1>Happy Birthday Mom!</h1>
-        <img src={pond} alt='wait until the page loads'/>
-        <div className='Button'>
-          <button onClick={this.playAudio}>
-            <span>Play Audio</span>
+        <header>Happy Birthday Mom!</header>
+     
+          <button className='audio-button' onClick={this.playPause}>
+            Play Audio
           </button>
-          <audio>
-            <source src='Happy-birthday-piano-music.mov'></source>
-          </audio>
-        </div>
+     
+        {/* <MyLogo/> */}
+        <img src={sunflower} className='sunflower' alt='wait until the page loads' />
+        {/* <button className='pun-one'>Click me!</button> */}
       </div>
     );
   }
