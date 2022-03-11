@@ -70,13 +70,32 @@ header {
 .Pun {
   position: relative; 
   bottom: 420px;
-  text-align: center;
+  text-align: left;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: brown
   /* top: 30%;
   margin-left: auto;
   margin-right: auto;
   width: 50%; */
+}
+
+.pun-two {
+  background-color: yellow;
+  position:absolute;
+  text-align: center;
+  left:0;
+  bottom:80%;
+  width:10%;
+  margin-left:45%;
+  margin-right:45%;
+}
+
+.PunTwo {
+  position: relative; 
+  bottom: 150px;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: brown
 }
 
 /* path {
