@@ -98,6 +98,23 @@ header {
   color: brown
 }
 
+.pun-three {
+  background-color: yellow;
+  /* position: absolute; */
+  text-align: center;
+  bottom:80%;
+  width:10%;
+  margin-left:45%;
+  margin-right:45%;
+}
+
+.PunThree {
+  position: absolute; 
+  bottom: 150px;
+  text-align: right;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: brown
+}
 /* path {
   fill: transparent;
 } */
