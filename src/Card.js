@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
-//import pond from "./pond.gif";
 import sunflower from './sunflower.png';
-import './Happy-birthday-piano-music.mov';
 //import { ReactComponent as MyLogo } from './happy-birthday.svg'
 import song from './Happy-birthday-piano-music.mp3';
+import { Pun } from './Pun'
 
 export default class Card extends React.Component {
   state = {
     audio: new Audio(song),
     isPlaying: false,
+    showPun: false
   };
   playPause = () => {
     let isPlaying = this.state.isPlaying;
@@ -25,14 +25,21 @@ export default class Card extends React.Component {
     return (
       <div>
         <header>Happy Birthday Mom!</header>
-     
-          <button className='audio-button' onClick={this.playPause}>
-            Play Audio
-          </button>
-     
+        <button className='audio-button' onClick={this.playPause}>
+          Play Audio
+        </button>
         {/* <MyLogo/> */}
-        <img src={sunflower} className='sunflower' alt='wait until the page loads' />
-        {/* <button className='pun-one'>Click me!</button> */}
+        <img
+          src={sunflower}
+          className='sunflower'
+          alt='wait until the page loads'
+        />
+        <button className='pun-one' onClick={() => this.setState({ showPun: true })}
+        >Click me for a pun!
+        </button>
+        {this.state.showPun === true && (
+          <Pun/>
+        )}
       </div>
     );
   }

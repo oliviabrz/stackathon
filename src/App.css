@@ -57,7 +57,26 @@ header {
 }
 
 .pun-one {
-  text-align: left
+  background-color: yellow;
+  position:absolute;
+  /* top: 10px; */
+  left:0;
+  bottom:35%;
+  width:10%;
+  margin-left:45%;
+  margin-right:45%;
+}
+
+.Pun {
+  position: relative; 
+  bottom: 420px;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: brown
+  /* top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
 }
 
 /* path {
