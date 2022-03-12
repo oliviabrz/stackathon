@@ -28,3 +28,5 @@ turnip picture: https://www.medicalnewstoday.com/articles/284815
 cinatro picture: https://aanmc.org/featured-articles/naturopathic-kitchen-cilantro-101/
 
 aloe picture: https://ih1.redbubble.net/image.2403600930.3813/st,small,507x507-pad,600x600,f8f8f8.jpg
+
+growing picture: https://saosis.com/how-to-make-a-plant-grow-faster-and-bigger-5-secrets

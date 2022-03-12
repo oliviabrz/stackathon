@@ -12,13 +12,13 @@ export class PunTwo extends React.Component {
       <div className='PunTwo'>
         <p>Wait...it's your birthday? Say it ain't cilantro!!</p>
         <img src={cilantro} alt='' />
-        {/* <button
+        <button
           className='pun-three'
           onClick={() => this.setState({ showPun3: true })}
         >
           Ok....one more, just click me please!
         </button>
-        {this.state.showPun3 === true && <PunThree />} */}
+        {this.state.showPun3 === true && <PunThree />}
       </div>
     );
   }

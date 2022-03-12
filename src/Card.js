@@ -40,12 +40,6 @@ export default class Card extends React.Component {
         {this.state.showPun === true && (
           <Pun/>
         )}
-        {/* <button className='pun-two' onClick={() => this.setState({showPun2: true })}
-        >Want another pun? Click me now!
-        </button>
-        {this.state.showPun2 === true && (
-          <PunTwo/>
-        )} */}
       </div>
     );
   }
